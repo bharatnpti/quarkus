@@ -37,8 +37,8 @@ import org.jboss.resteasy.reactive.common.jaxrs.MultiQueryParamMode;
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InstanceHandle;
 import io.quarkus.rest.client.reactive.runtime.ProxyAddressUtil.HostAndPort;
-import io.quarkus.restclient.config.RestClientLoggingConfig;
 import io.quarkus.restclient.config.RestClientsConfig;
+import io.quarkus.restclient.config.core.RestClientLoggingConfig;
 
 /**
  * Builder implementation for MicroProfile Rest Client

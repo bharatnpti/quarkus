@@ -10,12 +10,15 @@ import org.eclipse.microprofile.rest.client.ext.QueryParamStyle;
 
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InstanceHandle;
+import io.quarkus.restclient.config.core.IRestClientsConfig;
+import io.quarkus.restclient.config.core.RestClientConfig;
+import io.quarkus.restclient.config.core.RestClientLoggingConfig;
 import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;
 
 @ConfigRoot(name = "rest-client", phase = ConfigPhase.RUN_TIME)
-public class RestClientsConfig {
+public class RestClientsConfig implements IRestClientsConfig {
 
     /**
      * Configurations of REST client instances.
@@ -296,6 +299,146 @@ public class RestClientsConfig {
      */
     @ConfigItem
     public Optional<Boolean> alpn;
+
+    @Override
+    public Map<String, RestClientConfig> configKey() {
+        return null;
+    }
+
+    @Override
+    public Optional<Boolean> disableSmartProduces() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> multipartPostEncoderMode() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> proxyAddress() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> proxyUser() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> proxyPassword() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> nonProxyHosts() {
+        return Optional.empty();
+    }
+
+    @Override
+    public RestClientLoggingConfig logging() {
+        return null;
+    }
+
+    @Override
+    public Long connectTimeout() {
+        return null;
+    }
+
+    @Override
+    public Long readTimeout() {
+        return null;
+    }
+
+    @Override
+    public boolean disableContextualErrorMessages() {
+        return false;
+    }
+
+    @Override
+    public Optional<String> userAgent() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Map<String, String> headers() {
+        return null;
+    }
+
+    @Override
+    public Optional<String> hostnameVerifier() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Integer> connectionTTL() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Integer> connectionPoolSize() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Integer> maxRedirects() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Boolean> followRedirects() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> providers() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> scope() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<QueryParamStyle> queryParamStyle() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Boolean> verifyHost() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> trustStore() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> trustStorePassword() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> trustStoreType() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> keyStore() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> keyStorePassword() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<String> keyStoreType() {
+        return Optional.empty();
+    }
 
     public RestClientConfig getClientConfig(String configKey) {
         if (configKey == null) {

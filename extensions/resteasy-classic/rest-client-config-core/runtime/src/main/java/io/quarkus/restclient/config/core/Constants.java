@@ -1,4 +1,4 @@
-package io.quarkus.restclient.config;
+package io.quarkus.restclient.config.core;
 
 public final class Constants {
 

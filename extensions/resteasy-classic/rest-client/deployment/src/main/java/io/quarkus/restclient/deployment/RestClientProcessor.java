@@ -81,7 +81,7 @@ import io.quarkus.gizmo.MethodDescriptor;
 import io.quarkus.gizmo.ResultHandle;
 import io.quarkus.restclient.NoopHostnameVerifier;
 import io.quarkus.restclient.config.RestClientsConfig;
-import io.quarkus.restclient.config.deployment.RestClientConfigUtils;
+import io.quarkus.restclient.config.core.deployment.RestClientConfigUtils;
 import io.quarkus.restclient.runtime.PathFeatureHandler;
 import io.quarkus.restclient.runtime.PathTemplateInjectionFilter;
 import io.quarkus.restclient.runtime.RestClientBase;

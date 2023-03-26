@@ -1,8 +1,6 @@
-package io.quarkus.restclient.config.deployment;
+package io.quarkus.restclient.config.core.deployment;
 
-import static io.quarkus.restclient.config.Constants.GLOBAL_REST_SCOPE_FORMAT;
-import static io.quarkus.restclient.config.Constants.MP_REST_SCOPE_FORMAT;
-import static io.quarkus.restclient.config.Constants.QUARKUS_REST_SCOPE_FORMAT;
+import static io.quarkus.restclient.config.core.Constants.*;
 
 import java.util.Optional;
 

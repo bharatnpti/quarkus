@@ -1,4 +1,4 @@
-package io.quarkus.restclient.config;
+package io.quarkus.restclient.config.core;
 
 import java.util.ServiceLoader;
 
@@ -13,10 +13,10 @@ import org.eclipse.microprofile.rest.client.RestClientBuilder;
 public interface RestClientBuilderFactory {
 
     default RestClientBuilder newBuilder(Class<?> proxyType) {
-        return newBuilder(proxyType, RestClientsConfig.getInstance());
+        return newBuilder(proxyType, IRestClientsConfig.getInstance());
     }
 
-    RestClientBuilder newBuilder(Class<?> proxyType, RestClientsConfig restClientsConfigRoot);
+    RestClientBuilder newBuilder(Class<?> proxyType, IRestClientsConfig IRestClientsConfigRoot);
 
     static RestClientBuilderFactory getInstance() {
         ServiceLoader<RestClientBuilderFactory> sl = ServiceLoader.load(RestClientBuilderFactory.class);

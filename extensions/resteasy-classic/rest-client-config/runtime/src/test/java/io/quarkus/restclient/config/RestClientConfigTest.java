@@ -15,6 +15,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import io.quarkus.restclient.config.core.RestClientConfig;
 import io.smallrye.config.PropertiesConfigSource;
 
 public class RestClientConfigTest {

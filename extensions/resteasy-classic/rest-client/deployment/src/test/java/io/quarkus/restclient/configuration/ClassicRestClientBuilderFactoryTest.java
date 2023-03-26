@@ -6,7 +6,7 @@ import org.eclipse.microprofile.rest.client.RestClientBuilder;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
-import io.quarkus.restclient.config.RestClientBuilderFactory;
+import io.quarkus.restclient.config.core.RestClientBuilderFactory;
 import io.quarkus.test.QuarkusUnitTest;
 
 public class ClassicRestClientBuilderFactoryTest {

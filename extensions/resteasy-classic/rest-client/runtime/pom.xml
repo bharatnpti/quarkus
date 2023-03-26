@@ -32,7 +32,7 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest-client-config</artifactId>
+            <artifactId>quarkus-rest-client-config-icore</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy.microprofile</groupId>
@@ -101,6 +101,16 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-client-config-icore</artifactId>
+            <version>999-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-rest-client-config</artifactId>
+            <version>999-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

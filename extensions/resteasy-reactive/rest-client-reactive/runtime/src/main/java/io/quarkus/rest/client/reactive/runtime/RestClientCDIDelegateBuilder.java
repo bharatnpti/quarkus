@@ -24,8 +24,8 @@ import org.eclipse.microprofile.rest.client.ext.QueryParamStyle;
 import org.jboss.resteasy.reactive.client.api.QuarkusRestClientProperties;
 
 import io.netty.handler.codec.http.multipart.HttpPostRequestEncoder;
-import io.quarkus.restclient.config.RestClientConfig;
 import io.quarkus.restclient.config.RestClientsConfig;
+import io.quarkus.restclient.config.core.RestClientConfig;
 
 public class RestClientCDIDelegateBuilder<T> {
 
